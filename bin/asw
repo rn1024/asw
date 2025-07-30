@@ -1,0 +1,7 @@
+#!/usr/bin/env node
+// run `chmod +x bin/asw` if this file isn't executable
+import { main } from '../lib/index.js';
+main().catch(err => {
+  console.error(`\u274c ${err.message}`);
+});
+
