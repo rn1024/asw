@@ -1,0 +1,7 @@
+#!/usr/bin/env node
+// chmod +x bin/asw
+import { main } from '../lib/index.js';
+main().catch(err => {
+  console.error(`\u274c ${err.message}`);
+});
+
