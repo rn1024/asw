@@ -1,0 +1,25 @@
+{
+  "name": "asw",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./lib/index.js",
+  "bin": {
+    "asw": "./bin/asw"
+  },
+  "scripts": {
+    "test": "node test/test.js"
+  },
+  "type": "module",
+  "imports": {
+    "commander": "./vendor/commander.js",
+    "inquirer": "./vendor/inquirer.js",
+    "js-yaml": "./vendor/js-yaml.js",
+    "fs-extra": "./vendor/fs-extra.js"
+  },
+  "files": [
+    "bin",
+    "lib",
+    "vendor"
+  ],
+  "license": "MIT"
+}
