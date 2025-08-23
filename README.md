@@ -5,22 +5,30 @@ All dependencies are bundled locally so you can run without installation.
 
 ## Installation
 
+Install the CLI globally from npm:
+
 ```bash
-chmod +x bin/asw
+npm install -g asw
+```
+
+For local development before publishing, you can link the current checkout:
+
+```bash
+npm link
 ```
 
 ## Usage
 
 ```bash
-./bin/asw add <profile> --tool <tool> --url <baseURL> --model <modelId> [--key <apiKey>|--key-env <ENV>]
-./bin/asw use <profile>
-./bin/asw ls
-./bin/asw current
-./bin/asw rm <profile>
-./bin/asw key <profile>
+asw add <profile> --tool <tool> --url <baseURL> --model <modelId> [--key <apiKey>|--key-env <ENV>]
+asw use <profile>
+asw ls
+asw current
+asw rm <profile>
+asw key <profile>
 ```
 
-Run `./bin/asw --help` for command information.
+Run `asw --help` for command information.
 
 ## Testing
 
